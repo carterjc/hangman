@@ -1,7 +1,7 @@
 const wordElement = document.getElementById('word');
 const incorrectLettersElement = document.getElementById('incorrect-letters');
 const repeatNotif = document.getElementById('repeat-letter-notif');
-const finalNotif = document.getElementById('final-notif');
+const finalNotif = document.getElementById('final-notif-container');
 const finalMessage = document.getElementById('final-message');
 const finalWordReveal = document.getElementById('final-word-reveal');
 const playAgainButton = document.getElementById('play-button');
@@ -57,10 +57,10 @@ function updateWrongLetters() {
 }
 
 function showRepeatLetterNotif() {
-	notification.classList.add('show');
+	repeatNotif.classList.add('show');
 
 	setTimeout(() => {
-		notification.classList.remove('show');
+		repeatNotif.classList.remove('show');
 	}, 2000);
 }
 

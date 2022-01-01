@@ -31,10 +31,10 @@
       </svg>
 
       <!-- word to be guessed (blank spaces until letter is guessed) -->
-      <div id='word'></div>
+      <div class="word" id='word'></div>
 
       <!-- incorrect letters the user enters (corresponds with hangman progress) -->
-      <div class='incorrect-letters-con'>
+      <div class='incorrect-letters-container'>
         <div id='incorrect-letters'></div>
       </div>
 
@@ -46,14 +46,14 @@
     </div>
 
     <!-- popup when game is finished -->
-    <div class='final-notif-con' id='final-notif'>
+    <div class='final-notif-container' id='final-notif-container'>
       <div class='final-notif'>
         <h2 id='final-message'></h2>
         <h3 id='final-word-reveal'></h3>
         <button id="play-button">Play Again</button>
       </div>
     </div>
-    
+
     <script type='module' src="script.js"></script>
   </body>
 </html>
